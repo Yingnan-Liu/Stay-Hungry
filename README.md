@@ -6,3 +6,6 @@
   - useDeferrdValue
   - Suspense
   - useId 
+
+
+`to do` The Story of Asynchronous JavaScript https://www.youtube.com/watch?v=rivBfgaEyWQ
