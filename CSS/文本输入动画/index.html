@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本输入动画效果 CSS实现</title>
+    <style>
+        .typing{
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .typing-effect{
+            width:16ch;
+            animation: typing 2s steps(16), effect .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 2em;
+        }
+        @keyframes typing {
+        from {
+            width: 0
+        }
+        }
+        @keyframes effect {
+        50% {
+            border-color: transparent
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="typing">
+        <div class="typing-effect">
+            <!-- typing effect for text -->
+            文本输入动画效果
+        </div>
+    </div>
+</body>
+</html>
